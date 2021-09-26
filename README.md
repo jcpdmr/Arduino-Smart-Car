@@ -12,3 +12,5 @@ https://www.arduino.cc/en/software
 
 Inoltre per lavorare con il microcontrollore esp32 si devono seguire degli step aggiuntivi:
 https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/
+
+N.B. : QUANDO UNO SCKETCH E' STATO TESTATO E FUNZIONA PERFETTAMENTE RICORDARE DI COMMENTARE QUALUNQUE RIGA DI CODICE CHE STAMPA VALORI SUL MONITOR SERIALE DEL PC!
