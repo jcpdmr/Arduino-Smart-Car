@@ -16,17 +16,12 @@ void loop() {
  
   if(sample_sum == 0 || sample_sum == num_samples){
       digitalWrite(alarmPin, HIGH);
-      //Serial.println("The car is stucked!");
-      delay(100);
-      while(loop_sum == first_sum){
-        loop_sum = sum_read();   
-        } 
-      digitalWrite(alarmPin, LOW);
-      delay(500);
       }
-    }
+  else{
+      digitalWrite(alarmPin, LOW);
+      }  
 
- delay(50);
+ delay(2000); //the meaning of this big delay is to prevent the activation of the alarm by accidental stop of the wheel during the change of direction
 }
 
 int sum_read(){
