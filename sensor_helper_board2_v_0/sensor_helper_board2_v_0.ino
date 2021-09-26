@@ -26,8 +26,7 @@ void loop() {
       }
     }
 
- last_sum = first_sum;
- delay(100);
+ delay(50);
 }
 
 int sum_read(){
