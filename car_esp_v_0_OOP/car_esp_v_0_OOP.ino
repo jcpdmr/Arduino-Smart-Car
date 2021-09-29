@@ -274,7 +274,7 @@ void loop() {
         delay(500);    
         while(status_alarm_one == 1){
           turn_right_random();
-          delay(1000);
+          delay(300);
           status_alarm_one = digitalRead(sensorOnePin);
           Serial.println("----ALARM---- Current status one: " + String(status_alarm_one));
           delay(100);
@@ -291,12 +291,12 @@ void loop() {
         detachInterrupt(digitalPinToInterrupt(sensorTwoPin));
         Serial.println("INTERRUPT CORRELATED TO SENSOR TWO HAS HAPPENED! ");
         goback();
-        delay(1500);
+        delay(1000);
         stopcar();
         delay(500);
         //while(status_alarm_two == 1){         
           turn_right_random();
-          delay(00);
+          delay(300);
         status_alarm_two = 0;
         attachInterrupt(digitalPinToInterrupt(sensorOnePin), isrOne, RISING);
         attachInterrupt(digitalPinToInterrupt(sensorTwoPin), isrTwo, HIGH);
